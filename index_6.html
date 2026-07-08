@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nirali Aswal — Equity Research &amp; Finance</title>
+<meta name="description" content="Aspiring Financial Analyst — equity research with Drexel's Dragon Fund, FP&A, and corporate finance experience.">
+<meta property="og:title" content="Nirali Aswal — Equity Research &amp; Finance">
+<meta property="og:description" content="Aspiring Financial Analyst — equity research with Drexel's Dragon Fund, FP&A, and corporate finance experience.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Nirali Aswal — Equity Research &amp; Finance">
+<meta name="twitter:description" content="Aspiring Financial Analyst — equity research with Drexel's Dragon Fund, FP&A, and corporate finance experience.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='16' fill='%234C6B7A'/%3E%3Ctext x='50' y='68' font-size='52' font-family='Georgia,serif' fill='%23FBF8F2' text-anchor='middle'%3ENA%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#FBF8F2; --card:#FFFFFF; --sand:#EFE8D9; --ink:#2A2E37; --muted:#767C88;
+    --accent:#4C6B7A; --line:#E3DCCB; --green:#3E7A5D; --green-bg:#E8F1EA;
+    --rust:#B0543C; --rust-bg:#F6EAE4;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0; font-family:'Inter',sans-serif; color:var(--ink); line-height:1.65;
+    background-color:var(--bg);
+    background-image:
+      radial-gradient(circle at 8% 12%, rgba(76,107,122,0.07), transparent 32%),
+      radial-gradient(circle at 94% 85%, rgba(176,84,60,0.05), transparent 30%),
+      radial-gradient(circle at 96% 15%, rgba(62,122,93,0.05), transparent 28%),
+      radial-gradient(circle, var(--line) 1px, transparent 1px);
+    background-size:auto, auto, auto, 26px 26px;
+    background-attachment:fixed;
+    background-repeat:no-repeat, no-repeat, no-repeat, repeat;
+  }
+  .wrap{max-width:880px; margin:0 auto; padding:0 24px; position:relative;}
+  @media (max-width:640px){ body{background-attachment:scroll;} }
+  h1,h2,h3,.serif{font-family:'DM Serif Display',serif; font-weight:400;}
+  a{color:var(--accent);}
+
+  nav{position:sticky; top:0; z-index:50; background:rgba(251,248,242,0.95); border-bottom:1px solid var(--line); backdrop-filter:blur(4px);}
+  nav .wrap{display:flex; align-items:center; justify-content:space-between; padding:18px 24px;}
+  nav .brand{font-family:'DM Serif Display',serif; font-size:18px; color:var(--ink);}
+  nav ul{list-style:none; display:flex; gap:24px; margin:0; padding:0; font-size:13px;}
+  nav a{text-decoration:none; color:var(--muted);}
+  nav a:hover{color:var(--ink);}
+
+  header.hero{padding:64px 0 40px; position:relative; overflow:hidden;}
+  .hero p.eyebrow{font-size:13px; color:var(--muted); margin:0 0 14px;}
+  .hero h1{font-size:34px; margin:0 0 6px; color:var(--ink);}
+  .hero .role{font-size:16px; color:var(--accent); font-weight:600; margin:0 0 16px;}
+  .hero p.lead{max-width:560px; color:var(--muted); font-size:15.5px; margin:0 0 24px;}
+  .hero-cta{display:flex; gap:12px; flex-wrap:wrap;}
+  .btn{display:inline-block; padding:10px 20px; border-radius:6px; font-size:14px; font-weight:600; text-decoration:none; transition:all .15s ease;}
+  .btn-primary{background:var(--accent); color:#fff;}
+  .btn-primary:hover{background:#3d5763; color:#fff;}
+  .btn-secondary{background:transparent; color:var(--accent); border:1.5px solid var(--accent);}
+  .btn-secondary:hover{background:var(--sand);}
+
+  .section-title{position:relative; display:inline-block;}
+  .section-title::after{content:''; position:absolute; left:0; bottom:-6px; width:46px; height:3px; background:var(--accent); border-radius:2px;}
+
+  .reveal{opacity:0; transform:translateY(16px); transition:opacity .6s ease, transform .6s ease;}
+  .reveal.visible{opacity:1; transform:translateY(0);}
+  ::selection{background:var(--accent); color:#fff;}
+
+  section{padding:48px 0; border-top:1px solid var(--line);}
+  .section-title{font-size:24px; margin:0 0 8px; color:var(--ink);}
+  .section-sub{color:var(--muted); font-size:14px; margin:0 0 28px;}
+
+  .note{border:1px solid var(--line); border-radius:6px; margin-bottom:24px; background:var(--card); overflow:hidden;}
+  .note-head{display:flex; align-items:center; justify-content:space-between; padding:14px 20px; border-bottom:1px solid var(--line); flex-wrap:wrap; gap:8px;}
+  .tick-block{display:flex; align-items:center; gap:12px; flex-wrap:wrap;}
+  .ticker{font-weight:700; font-size:16px; letter-spacing:.02em;}
+  .rec{font-size:11px; font-weight:600; padding:3px 9px; border-radius:3px; letter-spacing:.03em; text-transform:uppercase;}
+  .rec.buy{background:var(--green-bg); color:var(--green);}
+  .rec.sell{background:var(--rust-bg); color:var(--rust);}
+  .meta{font-size:12px; color:var(--muted);}
+  .outcome{font-weight:700; font-size:17px;}
+  .outcome.pos{color:var(--green);} .outcome.neg{color:var(--rust);}
+  .note-body{padding:20px;}
+  .note-body h3{font-size:19px; margin:0 0 4px;}
+  .note-body .sub{color:var(--muted); font-size:13.5px; margin:0 0 16px;}
+  .thesis-line{font-style:italic; color:var(--accent); font-size:15px; border-left:2px solid var(--sand); padding-left:14px; margin:0 0 18px;}
+  .logic{list-style:none; margin:0; padding:0;}
+  .logic li{margin-bottom:12px; font-size:14px;}
+  .note-foot{margin-top:16px; padding-top:14px; border-top:1px solid var(--line); font-size:13px;}
+
+  .earnings-grid{display:grid; grid-template-columns:1fr 1fr; gap:16px;}
+  @media (max-width:640px){.earnings-grid{grid-template-columns:1fr;}}
+  .earn-card{border:1px solid var(--line); padding:18px; border-radius:6px; background:var(--card);}
+  .earn-card h4{font-size:12px; letter-spacing:.03em; text-transform:uppercase; color:var(--muted); margin:0 0 8px;}
+  .earn-card .stat{font-size:21px; font-weight:700; color:var(--ink); margin-bottom:2px;}
+  .earn-card .stat-label{font-size:13px; color:var(--muted);}
+
+  .story{font-size:15.5px; max-width:600px; margin:0 0 20px;}
+  .story-label{font-size:12px; text-transform:uppercase; letter-spacing:.04em; color:var(--muted); margin-bottom:6px;}
+
+  details.tile{border:1px solid var(--line); border-radius:6px; overflow:hidden; background:var(--card); margin-bottom:12px;}
+  details.tile summary{list-style:none; cursor:pointer; padding:16px 20px; display:flex; align-items:center; justify-content:space-between;}
+  details.tile summary::-webkit-details-marker{display:none;}
+  details.tile summary:hover{background:var(--sand);}
+  .s-title{font-size:15.5px; font-weight:600;}
+  .s-sub{font-size:12.5px; color:var(--muted); margin-top:2px;}
+  .chevron{color:var(--muted); font-size:16px;}
+  details.tile[open] summary{border-bottom:1px solid var(--line);}
+  .tile-body{padding:16px 20px 20px; font-size:14.5px;}
+  .tile-body p{margin:0 0 12px;}
+  .tile-body ul{margin:0 0 12px; padding-left:18px;}
+  .tile-body li{margin-bottom:6px;}
+  .role-block{margin-bottom:18px;}
+  .role-block:last-child{margin-bottom:0;}
+  .role-head{display:flex; justify-content:space-between; align-items:baseline; margin-bottom:6px; flex-wrap:wrap; gap:6px;}
+  .role-title{font-weight:600; color:var(--ink);}
+  .role-meta{font-size:12px; color:var(--muted);}
+
+  footer{padding:32px 0; font-size:13px; color:var(--muted); border-top:1px solid var(--line);}
+  footer .wrap{display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px;}
+  .watch-table{width:100%; border-collapse:collapse; font-size:13.5px; margin-bottom:28px;}
+  .watch-table th{text-align:left; font-size:11px; text-transform:uppercase; letter-spacing:.03em; color:var(--muted); padding:6px 10px; border-bottom:1px solid var(--line);}
+  .watch-table td{padding:8px 10px; border-bottom:1px solid var(--line);}
+  .watch-table tr:last-child td{border-bottom:none;}
+  .watch-ticker{font-weight:700; color:var(--ink);}
+  .watch-sector-label{font-size:12px; font-weight:600; text-transform:uppercase; letter-spacing:.04em; color:var(--accent); margin:24px 0 8px;}
+  .watch-sector-label:first-child{margin-top:0;}
+  .watch-updated{font-size:12px; color:var(--muted); margin-bottom:20px;}
+  .dash-controls{display:flex; flex-wrap:wrap; gap:8px; margin-bottom:20px;}
+  .dash-pill{font-size:12.5px; padding:6px 14px; border-radius:20px; border:1px solid var(--line); background:var(--card); color:var(--ink); cursor:pointer; transition:all .15s ease;}
+  .dash-pill:hover{background:var(--sand);}
+  .dash-pill.active{background:var(--accent); color:#fff; border-color:var(--accent);}
+  .dash-stats{display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin-bottom:20px;}
+  @media (max-width:640px){.dash-stats{grid-template-columns:1fr;}}
+  .dash-stat{border:1px solid var(--line); border-radius:6px; padding:14px 16px; background:var(--card); transition:all .15s ease;}
+  a.dash-stat:hover{border-color:var(--accent); background:var(--sand);}
+  a.dash-stat .n{color:var(--accent);}
+  .dash-stat .n{font-size:22px; font-weight:700; color:var(--ink);}
+  .dash-stat .l{font-size:11.5px; color:var(--muted); text-transform:uppercase; letter-spacing:.03em;}
+  .chart-wrap{border:1px solid var(--line); border-radius:6px; background:var(--card); padding:16px; margin-bottom:24px;}
+  .chart-caption{font-size:12px; color:var(--muted); margin:8px 4px 0;}
+  #peMarginChart{max-height:380px;}
+  .dash-table{width:100%; border-collapse:collapse; font-size:13.5px;}
+  .dash-table th{text-align:left; font-size:11px; text-transform:uppercase; letter-spacing:.03em; color:var(--muted); padding:8px 10px; border-bottom:1px solid var(--line); cursor:pointer; user-select:none; white-space:nowrap;}
+  .dash-table th:hover{color:var(--ink);}
+  .dash-table th .arrow{font-size:10px; opacity:.5; margin-left:3px;}
+  .dash-table td{padding:8px 10px; border-bottom:1px solid var(--line);}
+  .dash-table tr:hover td{background:var(--sand);}
+  .dash-ticker{font-weight:700; color:var(--ink);}
+  .dash-sector-tag{font-size:10.5px; color:var(--muted);}
+  .neg{color:var(--rust);}
+  .pos{color:var(--green);}
+
+  .conv-tag{font-size:11px; font-weight:600; padding:3px 10px; border-radius:12px;}
+  .range-bar-wrap{margin:10px 0;}
+  .range-bar-track{position:relative; height:5px; background:var(--sand); border-radius:3px; margin-bottom:3px;}
+  .range-bar-marker{position:absolute; top:-3px; width:11px; height:11px; border-radius:50%; background:var(--accent); border:2px solid var(--card); transform:translateX(-50%);}
+  .range-bar-labels{display:flex; justify-content:space-between; font-size:10.5px; color:var(--muted);}
+  .dash-cards{display:grid; grid-template-columns:repeat(auto-fill, minmax(260px, 1fr)); gap:14px;}
+  .dash-card{border:1px solid var(--line); border-radius:8px; padding:16px; background:var(--card);}
+  .dash-card-head{display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;}
+  .dash-card-company{font-size:13.5px; color:var(--muted); margin-bottom:12px;}
+  .dash-card-stats{display:flex; justify-content:space-between; margin-bottom:6px;}
+  .dash-card-stats div{display:flex; flex-direction:column; gap:2px;}
+  .dash-card-stats .l{font-size:10.5px; text-transform:uppercase; color:var(--muted); letter-spacing:.03em;}
+  .dash-card-stats .v{font-size:14px; font-weight:600; color:var(--ink);}
+  .dash-card-thesis{font-size:12.5px; color:var(--ink); line-height:1.5; margin:10px 0 0; padding-top:10px; border-top:1px solid var(--line);}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <div class="brand">Nirali Aswal</div>
+    <ul>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#excel">Excel Models</a></li>
+      <li><a href="#earnings">Earnings</a></li>
+      <li><a href="#watchlist">Watchlist</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Philadelphia, PA · Finance &amp; Business Analytics, Drexel '26</p>
+    <h1>Nirali Aswal</h1>
+    <p class="role">Aspiring Financial Analyst</p>
+    <p class="lead">Equity analyst with Drexel's Dragon Fund, with buy and sell calls presented to committee. Background in FP&amp;A, compensation analytics, and consulting. Open to equity research, PE, and analyst roles.</p>
+    <div class="dash-stats" style="margin-bottom:0;">
+      <a href="Nirali_Aswal_Resume.pdf" target="_blank" class="dash-stat" style="text-decoration:none; display:block;">
+        <div class="n" style="font-size:16px;">Resume</div>
+        <div class="l">Download PDF</div>
+      </a>
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=niraliaswal31@gmail.com" target="_blank" class="dash-stat" style="text-decoration:none; display:block;">
+        <div class="n" style="font-size:16px;">Email</div>
+        <div class="l">niraliaswal31@gmail.com</div>
+      </a>
+      <a href="https://www.linkedin.com/in/nirali-aswal" target="_blank" class="dash-stat" style="text-decoration:none; display:block;">
+        <div class="n" style="font-size:16px;">LinkedIn</div>
+        <div class="l">Connect / view profile</div>
+      </a>
+    </div>
+  </div>
+</header>
+
+<section id="research">
+  <div class="wrap">
+    <h2 class="section-title">Equity research</h2>
+    <p class="section-sub">Three pitches presented to committee for a vote.</p>
+
+    <div class="note">
+      <div class="note-head">
+        <div class="tick-block"><span class="ticker">NXT</span><span class="rec buy">Buy</span><span class="meta">Research started Oct 2025 · Industrials</span></div>
+        <div class="outcome pos">+57%</div>
+      </div>
+      <div class="note-body">
+        <h3>Nextpower, Inc.</h3>
+        <p class="sub">Solar tracking, eBOS &amp; software platform</p>
+        <ul class="logic">
+          <li>Case rested on a $5B+ backlog, $845M cash with zero long-term debt, and a rebrand from tracker manufacturer into a full energy-tech platform.</li>
+          <li>Weighed customer concentration (~70% of revenue from a handful of large customers) against margin quality — 21.6% operating margin and 36.6% ROIC vs. a 7.0% sector average.</li>
+          <li>Bought at $91.62; refined DCF (11.4% WACC, 3.8x EV/Revenue exit — consistent with peer comps) targets $90.74. The case rested on the qualitative thesis, not the DCF math — and the stock is up 57% since research began in October 2025.</li>
+        </ul>
+        <div class="range-bar-wrap" style="margin:16px 0 4px;" title="52-wk range: $52.61 – $163.13">
+          <div class="range-bar-track"><div class="range-bar-marker" style="left:60.1%"></div></div>
+          <div class="range-bar-labels"><span>$52.61 (52-wk low)</span><span>$119.14 current</span><span>$163.13 (52-wk high)</span></div>
+        </div>
+        <div class="note-foot"><a href="NXT_Buy_DCF.xlsx" target="_blank">View DCF model (Excel) →</a></div>
+      </div>
+    </div>
+
+    <div class="note">
+      <div class="note-head">
+        <div class="tick-block"><span class="ticker">BLDR</span><span class="rec sell">Sell</span><span class="meta">Research started Oct 2025 · Industrials</span></div>
+        <div class="outcome neg">−29%</div>
+      </div>
+      <div class="note-body">
+        <h3>Builders FirstSource, Inc.</h3>
+        <p class="sub">Housing-linked building products supplier</p>
+        <ul class="logic">
+          <li>Since 2021, $2.4B spent on acquisitions with no clear tie to revenue growth; ROIC fell from 13.0% to 3.6%.</li>
+          <li>Stress-tested housing exposure directly: single-family starts down 12.1% YoY, multi-family down 20.1% YoY.</li>
+          <li>Sold the position, favoring a better-positioned holding already in the portfolio. Down 29% since research began in October 2025.</li>
+        </ul>
+        <div class="range-bar-wrap" style="margin:16px 0 4px;" title="52-wk range: $65.10 – $151.03">
+          <div class="range-bar-track"><div class="range-bar-marker" style="left:29.6%"></div></div>
+          <div class="range-bar-labels"><span>$65.10 (52-wk low)</span><span>$90.51 current</span><span>$151.03 (52-wk high)</span></div>
+        </div>
+        <div class="note-foot"><a href="BLDR_Sell_DCF.xlsx" target="_blank">View DCF model (Excel) →</a></div>
+      </div>
+    </div>
+
+    <div class="note">
+      <div class="note-head">
+        <div class="tick-block"><span class="ticker">MTN</span><span class="rec sell">Sell</span><span class="meta">Research started Jan 2026 · Consumer Discretionary</span></div>
+        <div class="outcome" style="color:var(--muted);">flat</div>
+      </div>
+      <div class="note-body">
+        <h3>Vail Resorts, Inc.</h3>
+        <p class="sub">Ski resort operator</p>
+        <ul class="logic">
+          <li>Epic Pass penetration hit ~75% of visits; pass-unit growth slowed to ~2% YoY after 55% growth the prior five years.</li>
+          <li>Q1 26 EBITDA was flat YoY despite +4% revenue growth, with a fixed-cost base amplifying earnings swings.</li>
+          <li>Traded at 21.3x forward P/E, a premium to peers despite decelerating growth. Fundamentals played out — Q3 26 confirmed a weather-driven miss and guidance cut — though the stock has stayed roughly flat, and the position was a better fit elsewhere in the portfolio.</li>
+        </ul>
+        <div class="range-bar-wrap" style="margin:16px 0 4px;" title="52-wk range: $126.15 – $175.51">
+          <div class="range-bar-track"><div class="range-bar-marker" style="left:29.4%"></div></div>
+          <div class="range-bar-labels"><span>$126.15 (52-wk low)</span><span>$140.68 current</span><span>$175.51 (52-wk high)</span></div>
+        </div>
+        <div class="note-foot"><a href="MTN_Sell_DCF.xlsx" target="_blank">View DCF model (Excel) →</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="excel" style="padding-top:36px; padding-bottom:36px;">
+  <div class="wrap">
+    <h2 class="section-title" style="font-size:20px; margin-bottom:4px;">Excel Models</h2>
+    <p class="section-sub" style="margin-bottom:18px;">Direct links to the working DCF files behind each pitch above.</p>
+    <div class="dash-stats" style="grid-template-columns:repeat(3,1fr);">
+      <a href="NXT_Buy_DCF.xlsx" target="_blank" class="dash-stat" style="text-decoration:none; display:block;">
+        <div class="n" style="font-size:16px;">NXT — Buy DCF</div>
+        <div class="l">Nextpower, Inc. — download .xlsx</div>
+      </a>
+      <a href="BLDR_Sell_DCF.xlsx" target="_blank" class="dash-stat" style="text-decoration:none; display:block;">
+        <div class="n" style="font-size:16px;">BLDR — Sell DCF</div>
+        <div class="l">Builders FirstSource — download .xlsx</div>
+      </a>
+      <a href="MTN_Sell_DCF.xlsx" target="_blank" class="dash-stat" style="text-decoration:none; display:block;">
+        <div class="n" style="font-size:16px;">MTN — Sell DCF</div>
+        <div class="l">Vail Resorts — download .xlsx</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="earnings">
+  <div class="wrap">
+    <h2 class="section-title">Earnings coverage</h2>
+    <p class="section-sub">Booz Allen Hamilton — 2Q26 review</p>
+    <p class="story" style="margin-bottom:16px;"><strong>Bottom line:</strong> Miss across the board, driven by Civil segment weakness and slower funding conversion on record bookings; guidance cut confirms near-term pressure.</p>
+    <ul class="logic" style="margin-bottom:16px;">
+      <li>Revenue missed at $2.89B (vs. $2.97B est.), down 4.7% YoY; Adjusted EPS $1.49, down 17.7% YoY. Civil segment revenue fell 25.2% YoY on agency delays and program restructuring.</li>
+      <li>Won $7.2B in bookings (90% national security) with a 1.7x book-to-bill — but funding is arriving in smaller increments and ramping slower than historical patterns.</li>
+      <li>FY26 guidance cut to $11.3–$11.5B revenue and $5.45–$5.65 EPS, with $150M in annualized cost actions underway and added risk from a potential government shutdown.</li>
+    </ul>
+    <div class="note-foot"><a href="BAH_earnings.pdf" target="_blank">View full earnings note (PDF) →</a></div>
+  </div>
+</section>
+
+<section id="watchlist">
+  <div class="wrap">
+    <h2 class="section-title">Companies I'm tracking</h2>
+    <p class="section-sub">Mid-caps I researched or flagged while on the Dragon Fund — still following them post-grad. Click a sector to filter, click column headers to sort, or switch to card view for the full thesis on each name.</p>
+    <p class="watch-updated">Snapshot as of July 6, 2026. Manually updated, not live. Conviction reflects how well-documented my own analysis was at the time — not a price prediction.</p>
+
+    <div class="dash-stats">
+      <div class="dash-stat"><div class="n" id="statCount">20</div><div class="l">Companies Tracked</div></div>
+      <div class="dash-stat"><div class="n" id="statAvgPE">—</div><div class="l">Avg P/E (filtered)</div></div>
+      <div class="dash-stat"><div class="n" id="statAvgMargin">—</div><div class="l">Avg Net Margin (filtered)</div></div>
+    </div>
+
+    <div class="dash-controls" id="sectorPills"></div>
+    <div class="dash-controls" style="margin-bottom:20px;">
+      <button class="dash-pill" id="viewTableBtn">Table View</button>
+      <button class="dash-pill active" id="viewCardBtn">Card View</button>
+    </div>
+
+    <div class="chart-wrap">
+      <canvas id="peMarginChart"></canvas>
+      <p class="chart-caption">Valuation vs. profitability — P/E (x-axis) against net margin (y-axis), color-coded by sector. Hover a point for details.</p>
+    </div>
+
+    <table class="dash-table" id="dashTable" style="display:none;">
+      <thead>
+        <tr>
+          <th data-key="ticker">Ticker <span class="arrow">↕</span></th>
+          <th data-key="company">Company <span class="arrow">↕</span></th>
+          <th data-key="sector">Sector <span class="arrow">↕</span></th>
+          <th data-key="price">Price <span class="arrow">↕</span></th>
+          <th data-key="pe">P/E <span class="arrow">↕</span></th>
+          <th data-key="margin">Net Margin <span class="arrow">↕</span></th>
+          <th data-key="conviction">Conviction <span class="arrow">↕</span></th>
+        </tr>
+      </thead>
+      <tbody id="dashTableBody"></tbody>
+    </table>
+
+    <div class="dash-cards" id="dashCards" style="display:grid;"></div>
+  </div>
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
+<script>
+const watchlistData = [
+  {ticker:"COHR", company:"Coherent Corp", sector:"Info Tech", price:350.93, pe:48.6, peNote:"48.6x fwd (150.9x ttm)", margin:7.1, low52:73.85, high52:413.00, conviction:"High", thesis:"Four straight quarters of EPS beats, with 800G+ transceiver shipments set to grow 2.6x on AI datacenter demand."},
+  {ticker:"LSCC", company:"Lattice Semiconductor", sector:"Info Tech", price:137.39, pe:73.9, peNote:"73.9x fwd", margin:0.6, low52:60, high52:145, conviction:"High", thesis:"Revenue +24% YoY, EPS +113% YoY, debt-free with ~70% gross margins — clean momentum."},
+  {ticker:"IESC", company:"IES Holdings", sector:"Industrials", price:720.00, pe:38.7, peNote:"38.7x", margin:8.2, low52:265, high52:804, conviction:"High", thesis:"Backlog up 44% YoY to a record $2.6B, yet still the cheapest name in the peer group at 18.3x EV/EBITDA."},
+  {ticker:"CW", company:"Curtiss-Wright", sector:"Industrials", price:760.23, pe:56.5, peNote:"56.5x", margin:14.2, low52:463, high52:800, conviction:"Watching", thesis:"No sourced thesis yet — flagged for coverage, not from a documented vote."},
+  {ticker:"PWR", company:"Quanta Services", sector:"Industrials", price:601.88, pe:88.5, peNote:"88.5x", margin:3.6, low52:363.01, high52:788.75, conviction:"Watching", thesis:"No sourced thesis yet — flagged for coverage, not from a documented vote."},
+  {ticker:"JBHT", company:"J.B. Hunt Transport", sector:"Industrials", price:276.43, pe:42.9, peNote:"42.9x", margin:5.1, low52:150, high52:295, conviction:"Watching", thesis:"No sourced thesis yet — flagged for coverage, not from a documented vote."},
+  {ticker:"UTHR", company:"United Therapeutics", sector:"Healthcare", price:547.25, pe:20.5, peNote:"20.5x", margin:40.6, low52:272.12, high52:609.35, conviction:"Watching", thesis:"No sourced thesis yet — flagged for coverage, not from a documented vote."},
+  {ticker:"ELAN", company:"Elanco Animal Health", sector:"Healthcare", price:25.00, pe:null, peNote:"n/m", margin:-4.9, low52:11.92, high52:27.72, conviction:"Medium", thesis:"Consistent earnings growth (~10% YoY last quarter), with international expansion still to come."},
+  {ticker:"SEIC", company:"SEI Investments", sector:"Financials", price:91.18, pe:15.0, peNote:"15.0x", margin:27, low52:62.38, high52:93.96, conviction:"High", thesis:"30% ROIC vs. a 12% peer median, priced at the same multiple as everyone else."},
+  {ticker:"UMBF", company:"UMB Financial", sector:"Financials", price:144.91, pe:12.9, peNote:"12.9x", margin:28.1, low52:98.16, high52:145.69, conviction:"High", thesis:"EPS beat by 14% on credit quality nearly 5x better than the industry average, with $638M of Heartland accretion still ahead."},
+  {ticker:"WAL", company:"Western Alliance Bancorp", sector:"Financials", price:82.20, pe:9.7, peNote:"9.7x", margin:20, low52:65.82, high52:97.23, conviction:"Watching", thesis:"No sourced thesis yet — flagged for coverage, not from a documented vote."},
+  {ticker:"EVR", company:"Evercore", sector:"Financials", price:334.71, pe:19.3, peNote:"19.3x", margin:16.4, low52:148.63, high52:388.71, conviction:"Watching", thesis:"No sourced thesis yet — flagged for coverage, not from a documented vote."},
+  {ticker:"TOL", company:"Toll Brothers", sector:"Cons Disc", price:134.42, pe:9.6, peNote:"9.6x", margin:12.3, low52:100.92, high52:168.36, conviction:"Watching", thesis:"Voted yes on this Buy, but no written justification survives in my notes — thesis pending."},
+  {ticker:"BJ", company:"BJ's Wholesale Club", sector:"Cons Staples", price:92.97, pe:21.1, peNote:"21.1x", margin:2.6, low52:83.65, high52:115.43, conviction:"Medium", thesis:"16 straight quarters of traffic growth, priced at the cheapest multiple in the group with real upside to target."},
+  {ticker:"FANG", company:"Diamondback Energy", sector:"Energy", price:172.35, pe:8.3, peNote:"8.3x fwd (194x ttm)", margin:1.3, low52:134.30, high52:214.51, conviction:"High", thesis:"$5.5B of free cash flow and $1.8B of debt paid down in a single quarter, on 53% production growth."},
+  {ticker:"FTI", company:"TechnipFMC", sector:"Energy", price:66.23, pe:24.9, peNote:"24.9x", margin:10.6, low52:24, high52:70, conviction:"High", thesis:"Subsea cycle still early, backlog gives multi-year visibility, EBITDA +35% and EPS +20% YoY."},
+  {ticker:"NYT", company:"New York Times", sector:"Comm Svcs", price:83.68, pe:30.5, peNote:"30.5x", margin:13.2, low52:51.03, high52:87.10, conviction:"Medium", thesis:"12.2M digital subs locked in with double-digit growth still ahead, no debt, margins still expanding."},
+  {ticker:"JLL", company:"Jones Lang LaSalle", sector:"Real Estate", price:295.71, pe:15.8, peNote:"15.8x", margin:3.3, low52:230.24, high52:363.06, conviction:"High", thesis:"Q4 EPS beat by 42%, trading well below DCF intrinsic value."},
+  {ticker:"RGLD", company:"Royal Gold", sector:"Materials", price:198.96, pe:24.3, peNote:"24.3x", margin:48.9, low52:150.75, high52:306.25, conviction:"High", thesis:"Royalty model carries zero mining cost exposure — 82% EBITDA margins with gold realized prices up 44% YoY."},
+  {ticker:"TLN", company:"Talen Energy", sector:"Utilities", price:362.80, pe:null, peNote:"n/m", margin:-0.6, low52:255.50, high52:451.28, conviction:"High", thesis:"EBITDA inflecting from $305M to a projected $2.06B in 2026 on a locked-in AWS power contract, 90% of output already hedged."}
+];
+
+const sectorColors = {
+  "Info Tech":"#4C6B7A", "Industrials":"#8A6D3B", "Healthcare":"#3E7A5D", "Financials":"#5B6478",
+  "Cons Disc":"#B0543C", "Cons Staples":"#A88B5E", "Energy":"#6B4C3A", "Comm Svcs":"#7A5C7E",
+  "Real Estate":"#4C7A6B", "Materials":"#7A6B4C", "Utilities":"#5C6B7A"
+};
+
+const convictionColors = { "High":"var(--green)", "Medium":"var(--accent)", "Watching":"var(--muted)" };
+const convictionBg = { "High":"var(--green-bg)", "Medium":"var(--sand)", "Watching":"var(--sand)" };
+
+let activeSector = "All";
+let sortKey = "ticker";
+let sortDir = 1;
+let chart = null;
+let currentView = "card";
+
+function getFiltered(){
+  return activeSector === "All" ? watchlistData : watchlistData.filter(d => d.sector === activeSector);
+}
+
+function renderPills(){
+  const sectors = ["All", ...new Set(watchlistData.map(d => d.sector))];
+  const el = document.getElementById("sectorPills");
+  el.innerHTML = sectors.map(s => `<button class="dash-pill${s===activeSector?' active':''}" data-sector="${s}">${s}</button>`).join("");
+  el.querySelectorAll(".dash-pill").forEach(btn => {
+    btn.addEventListener("click", () => {
+      activeSector = btn.dataset.sector;
+      renderPills();
+      renderChart();
+      renderTable();
+      renderCards();
+      renderStats();
+    });
+  });
+}
+
+function renderStats(){
+  const data = getFiltered();
+  document.getElementById("statCount").textContent = data.length;
+  const withPE = data.filter(d => d.pe !== null);
+  const avgPE = withPE.length ? (withPE.reduce((a,d)=>a+d.pe,0)/withPE.length).toFixed(1)+"x" : "\u2014";
+  const avgMargin = (data.reduce((a,d)=>a+d.margin,0)/data.length).toFixed(1)+"%";
+  document.getElementById("statAvgPE").textContent = avgPE;
+  document.getElementById("statAvgMargin").textContent = avgMargin;
+}
+
+function renderChart(){
+  const data = getFiltered();
+  const bySector = {};
+  data.filter(d => d.pe !== null).forEach(d => {
+    if(!bySector[d.sector]) bySector[d.sector] = [];
+    bySector[d.sector].push({x:d.pe, y:d.margin, label:`${d.ticker} \u2014 ${d.company}`});
+  });
+  const datasets = Object.keys(bySector).map(sector => ({
+    label: sector,
+    data: bySector[sector],
+    backgroundColor: sectorColors[sector] || "#767C88",
+    pointRadius: 7,
+    pointHoverRadius: 9
+  }));
+
+  const ctx = document.getElementById('peMarginChart').getContext('2d');
+  if(chart) chart.destroy();
+  chart = new Chart(ctx, {
+    type: 'scatter',
+    data: { datasets },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: { position: 'bottom', labels: { font: { family: 'Inter', size: 11 }, color: '#5B6478', boxWidth: 10 } },
+        tooltip: {
+          callbacks: {
+            label: (ctx) => `${ctx.raw.label}: P/E ${ctx.raw.x}x, margin ${ctx.raw.y}%`
+          }
+        }
+      },
+      scales: {
+        x: { title: { display: true, text: 'P/E Ratio', color: '#5B6478', font:{family:'Inter', size:12} }, grid:{color:'#E3DCCB'} },
+        y: { title: { display: true, text: 'Net Margin %', color: '#5B6478', font:{family:'Inter', size:12} }, grid:{color:'#E3DCCB'} }
+      }
+    }
+  });
+}
+
+function rangeBar(d){
+  const pct = Math.max(2, Math.min(98, ((d.price - d.low52) / (d.high52 - d.low52)) * 100));
+  return `<div class="range-bar-wrap" title="52-wk range: $${d.low52.toFixed(2)} \u2013 $${d.high52.toFixed(2)}">
+    <div class="range-bar-track"><div class="range-bar-marker" style="left:${pct}%"></div></div>
+    <div class="range-bar-labels"><span>$${d.low52.toFixed(0)}</span><span>$${d.high52.toFixed(0)}</span></div>
+  </div>`;
+}
+
+function convictionTag(c){
+  return `<span class="conv-tag" style="color:${convictionColors[c]}; background:${convictionBg[c]};">${c}</span>`;
+}
+
+function renderTable(){
+  let data = getFiltered().slice();
+  data.sort((a,b) => {
+    let av = a[sortKey], bv = b[sortKey];
+    if(sortKey === "pe"){ av = av===null?-999:av; bv = bv===null?-999:bv; }
+    if(typeof av === "string") return av.localeCompare(bv) * sortDir;
+    return (av - bv) * sortDir;
+  });
+  const body = document.getElementById("dashTableBody");
+  body.innerHTML = data.map(d => `
+    <tr>
+      <td class="dash-ticker">${d.ticker}</td>
+      <td>${d.company}</td>
+      <td class="dash-sector-tag">${d.sector}</td>
+      <td>$${d.price.toFixed(2)}</td>
+      <td>${d.peNote}</td>
+      <td class="${d.margin < 0 ? 'neg' : 'pos'}">${d.margin > 0 ? '+' : ''}${d.margin}%</td>
+      <td>${convictionTag(d.conviction)}</td>
+    </tr>
+  `).join("");
+}
+
+function renderCards(){
+  const data = getFiltered();
+  const el = document.getElementById("dashCards");
+  el.innerHTML = data.map(d => `
+    <div class="dash-card">
+      <div class="dash-card-head">
+        <div>
+          <span class="dash-ticker" style="font-size:16px;">${d.ticker}</span>
+          <span class="dash-sector-tag" style="margin-left:8px;">${d.sector}</span>
+        </div>
+        ${convictionTag(d.conviction)}
+      </div>
+      <div class="dash-card-company">${d.company}</div>
+      <div class="dash-card-stats">
+        <div><span class="l">Price</span><span class="v">$${d.price.toFixed(2)}</span></div>
+        <div><span class="l">P/E</span><span class="v">${d.peNote}</span></div>
+        <div><span class="l">Margin</span><span class="v ${d.margin<0?'neg':'pos'}">${d.margin>0?'+':''}${d.margin}%</span></div>
+      </div>
+      ${rangeBar(d)}
+      <p class="dash-card-thesis">${d.thesis}</p>
+    </div>
+  `).join("");
+}
+
+document.querySelectorAll("#dashTable th").forEach(th => {
+  th.addEventListener("click", () => {
+    const key = th.dataset.key;
+    if(sortKey === key){ sortDir *= -1; } else { sortKey = key; sortDir = 1; }
+    renderTable();
+  });
+});
+
+document.getElementById("viewTableBtn").addEventListener("click", () => {
+  currentView = "table";
+  document.getElementById("viewTableBtn").classList.add("active");
+  document.getElementById("viewCardBtn").classList.remove("active");
+  document.getElementById("dashTable").style.display = "table";
+  document.getElementById("dashCards").style.display = "none";
+});
+document.getElementById("viewCardBtn").addEventListener("click", () => {
+  currentView = "card";
+  document.getElementById("viewCardBtn").classList.add("active");
+  document.getElementById("viewTableBtn").classList.remove("active");
+  document.getElementById("dashTable").style.display = "none";
+  document.getElementById("dashCards").style.display = "grid";
+});
+
+renderPills();
+renderChart();
+renderTable();
+renderCards();
+renderStats();
+</script>
+
+<section id="about">
+  <div class="wrap">
+    <h2 class="section-title">About</h2>
+
+    <p class="story-label">About Me</p>
+    <p class="story">I grew up in Rishikesh, India, and moved to the U.S. at 18 after finding Drexel's co-op program through my own research. Since then, I've lived in Philadelphia, studied abroad at the Berlin School of Economics and Law, and had multiple internship experiences throughout my college years.</p>
+
+    <p class="story-label">Why Finance</p>
+    <p class="story">My focus is equity research — analyzing markets, weighing risk, and building an investment thesis from the ground up. I found this through Drexel's Dragon Fund, where I covered Consumer Discretionary and Industrials and pitched buy/sell calls to committee. That's backed by corporate finance internship experience — an FP&amp;A co-op at FMC Corporation, plus compensation analytics and consulting co-ops — which gave me a working knowledge of how forecasting and planning drive a company from the inside, and sharpens how I read a company's numbers from the outside.</p>
+
+    <div style="margin-top:28px;">
+
+      <details class="tile">
+        <summary>
+          <div><div class="s-title">Leadership</div><div class="s-sub">International Students Union · ALPFA · Alpha Sigma Alpha</div></div>
+          <div class="chevron">+</div>
+        </summary>
+        <div class="tile-body">
+          <div class="role-block">
+            <div class="role-head"><span class="role-title">International Students Union — President</span><span class="role-meta">March 2024 – March 2026</span></div>
+            <ul>
+              <li>Increased student engagement by 60% and secured a 3x budget increase by directing strategy and programming across 15+ campus-wide events aligned with university goals.</li>
+              <li>Launched a mentorship program for 200+ new students, improving first-year retention and cultural integration.</li>
+              <li>Grew the executive board from 6 to 15 members and DragonLink membership from 279 to 372 over the course of the term.</li>
+              <li>Built a co-op panel connecting international students with peers placed at Macquarie, CurveBeam AI, Apollo, URBN, CHUBB, and PECO.</li>
+              <li>Scaled social media presence to 38,600+ views over 90 days and grew followers 200+ with a 15% lift in engagement.</li>
+            </ul>
+          </div>
+          <div class="role-block">
+            <div class="role-head"><span class="role-title">ALPFA — VP of Outreach</span><span class="role-meta">June 2024 – April 2025</span></div>
+            <ul>
+              <li>Boosted chapter engagement 40% and grew corporate partnerships through targeted outreach and networking events.</li>
+            </ul>
+          </div>
+          <div class="role-block">
+            <div class="role-head"><span class="role-title">Alpha Sigma Alpha — Finance Chair</span><span class="role-meta">April 2024 – March 2025</span></div>
+            <ul>
+              <li>Optimized a $60K+ chapter budget, cutting manual tracking 50% and enabling strategic fund allocation for events.</li>
+            </ul>
+          </div>
+        </div>
+      </details>
+
+      <details class="tile">
+        <summary>
+          <div><div class="s-title">Case competition</div><div class="s-sub">FIC3 2025 — Fraud &amp; Internal Controls, 2nd place</div></div>
+          <div class="chevron">+</div>
+        </summary>
+        <div class="tile-body">
+          <p>Hosted by Drexel University and sponsored by Mercadien, the IIA – Philadelphia Chapter, and the ACFE. Our team built a firm-wide risk assessment and internal controls plan, focused on segregation of duties, financial reporting procedures, auditor independence, and risk of material misstatement.</p>
+        </div>
+      </details>
+
+      <details class="tile">
+        <summary>
+          <div><div class="s-title">Co-op experience</div><div class="s-sub">FMC Corporation · Day &amp; Zimmermann · SAP</div></div>
+          <div class="chevron">+</div>
+        </summary>
+        <div class="tile-body">
+          <div class="role-block">
+            <div class="role-head"><span class="role-title">FMC Corporation — FP&amp;A Summer Analyst</span><span class="role-meta">June 2025 – Aug 2025</span></div>
+            <ul>
+              <li>Prepared and disseminated variance reports and portfolio analytics across $300M in costs, delivering written financial summaries and trend insights to senior stakeholders during quarterly close cycles.</li>
+              <li>Consolidated $2B+ in operating expense data across 15+ global sites into executive-facing reporting packages, supporting resource allocation and strategic decision-making.</li>
+              <li>Built Python and Excel-based dashboards to analyze $150M+ in workforce costs across 20+ cost centers, surfacing expense trends and producing actionable data visualizations for leadership.</li>
+            </ul>
+          </div>
+          <div class="role-block">
+            <div class="role-head"><span class="role-title">Day &amp; Zimmermann — Compensation Analyst Co-op</span><span class="role-meta">April 2024 – Sept 2024</span></div>
+            <ul>
+              <li>Maintained and audited compensation records for 100+ employees in SAP, ensuring data accuracy and resolving discrepancies against market benchmarks and internal policy.</li>
+              <li>Produced benchmarking and market trend reports supporting pay equity decisions across multiple business units.</li>
+              <li>Overhauled the job records database using advanced Excel (VBA/Macros), improving data integrity and reducing manual processing by 50%.</li>
+            </ul>
+          </div>
+          <div class="role-block">
+            <div class="role-head"><span class="role-title">SAP — World Sales Solutions, Consulting Associate</span><span class="role-meta">Sept 2022 – Feb 2023</span></div>
+            <ul>
+              <li>Boosted SAP Innovation Awards submissions by 30% through Power BI analysis, trend identification, and targeted outreach.</li>
+              <li>Accelerated client decisions with stakeholder-focused reports highlighting key risks and opportunities.</li>
+              <li>Expanded SAP Autism at Work program participation by 10% through tailored engagement campaigns.</li>
+            </ul>
+          </div>
+        </div>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="wrap">
+    <span>Nirali Aswal · Philadelphia, PA</span>
+    <a href="https://www.linkedin.com/in/nirali-aswal" target="_blank">LinkedIn</a>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('section, footer').forEach(el => el.classList.add('reveal'));
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
